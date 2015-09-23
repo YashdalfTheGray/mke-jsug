@@ -79,4 +79,18 @@ There are two ways you can pull in Elm, elm.fullsceen which takes the entire pag
 
 The interop with Javascript is seamless through the `ports` type in Elm. It does this also by preseving the type safety. You can define actions and input/output types through the port and Elm will try its best to adapt the data.
 
+## Tooling
+
+### Compiler
+
+The tooling gives you suggestions when it encounters an error. The compiler also outputs human-friendly errors and they encourage users to submit bug reports if the error encountered is not understandable.
+
+### Package Manager
+
+`elm-package` can be used to pull in packages. It will also ask you to add it to elm-package.json and add the dependencies. It will also do it politely.
+
+### REPL
+
+There is a time travelling debugger that records the app as time goes on. You can then pause the application and scrub back. You can also change parameters and it will make those changes live as you are scrubbing through the debugger history.
+
 
