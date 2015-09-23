@@ -1,5 +1,8 @@
 # Elm: A new approach to building the front end
 
+By Joel Clermont, @jclermont
+
+
 ## Agenda
 
 * language Tour
@@ -8,6 +11,7 @@
 * How does it fit with a current project
 * Tooling
 * Sales Pitch
+
 
 ## Language Tour
 
@@ -30,6 +34,7 @@ message
     |> toUpper
     |> repeat 5
 ```
+
 
 ## Application Architecture
 
@@ -55,6 +60,7 @@ update action model =
     ...
 ```
 
+
 ### View 
 
 The view action takes the model and spits out HTML. That's the basic architecture of an Elm app. 
@@ -67,9 +73,11 @@ view model =
 
 All HTML elements in Elm contain 3 things, a valid HTML node, the attributes needed on the element and other HTML attributes that need to go on that node.
 
+
 ## Sample App
 
 The sample app is a simple counter. It contains two actions, incement, decrement and the model is just an integer. 
+
 
 ## How does it fit?
 
@@ -78,6 +86,7 @@ It compiles to Javascript and the javascript source will be linked under the ind
 There are two ways you can pull in Elm, elm.fullsceen which takes the entire page and makes it the app. You can also use elm.embed which constricts it to one part of the page. 
 
 The interop with Javascript is seamless through the `ports` type in Elm. It does this also by preseving the type safety. You can define actions and input/output types through the port and Elm will try its best to adapt the data.
+
 
 ## Tooling
 
@@ -95,4 +104,22 @@ Elm compiler is available via node and there is also a grunt helper that can com
 
 There is a time travelling debugger that records the app as time goes on. You can then pause the application and scrub back. You can also change parameters and it will make those changes live as you are scrubbing through the debugger history.
 
+
 ## Sales Pitch
+
+### Why should I consider Elm?
+
+* It's fast.
+* It's (type)safe.
+* Great tooling and ecosystem
+* Easy to integrate gradually
+* It's fun
+
+## Some resources
+
+* [The Elm homepage](http://elm-lang.org)
+* [Video tutorials from Pragmatic Studio](http://progmaticstudio.com/elm)
+* @elmlang
+* @czaplic
+* @rtfeldman
+* http://noredinktech.tublr.com
