@@ -85,6 +85,8 @@ The interop with Javascript is seamless through the `ports` type in Elm. It does
 
 The tooling gives you suggestions when it encounters an error. The compiler also outputs human-friendly errors and they encourage users to submit bug reports if the error encountered is not understandable.
 
+Elm compiler is available via node and there is also a grunt helper that can compile javascript as you write Elm. 
+
 ### Package Manager
 
 `elm-package` can be used to pull in packages. It will also ask you to add it to elm-package.json and add the dependencies. It will also do it politely.
@@ -93,4 +95,4 @@ The tooling gives you suggestions when it encounters an error. The compiler also
 
 There is a time travelling debugger that records the app as time goes on. You can then pause the application and scrub back. You can also change parameters and it will make those changes live as you are scrubbing through the debugger history.
 
-
+## Sales Pitch
