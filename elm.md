@@ -11,6 +11,8 @@
 
 ## Language Tour
 
+Elm compiles to Javascript and conceptually, it is similar to how ReactJS works.
+
 Elm is a functional programming language. Any function in Elm takes in a parameter and spits out something; nothing else. All data in Elm is immutable. 
 
 There is some syntactic sugar to create objects from other objects but variables can't be reassigned.
@@ -28,3 +30,53 @@ message
     |> toUpper
     |> repeat 5
 ```
+
+## Application Architecture
+
+### The model
+
+Just like any data model.
+
+```elm 
+type alias Model = Int;
+```
+
+### Update
+
+There are Actions that you can declare and use. They kind of behave like functions. 
+
+The update action takes another action and takes a moded and returns the updated model.
+
+```elm
+actions = reset | ...
+
+update : action -> model -> model
+update action model = 
+    ...
+```
+
+### View 
+
+The view action takes the model and spits out HTML. That's the basic architecture of an Elm app. 
+
+```elm
+view : model -> Html
+view model = 
+    ...
+```
+
+All HTML elements in Elm contain 3 things, a valid HTML node, the attributes needed on the element and other HTML attributes that need to go on that node.
+
+## Sample App
+
+The sample app is a simple counter. It contains two actions, incement, decrement and the model is just an integer. 
+
+## How does it fit?
+
+It compiles to Javascript and the javascript source will be linked under the index.html. 
+
+There are two ways you can pull in Elm, elm.fullsceen which takes the entire page and makes it the app. You can also use elm.embed which constricts it to one part of the page. 
+
+The interop with Javascript is seamless through the `ports` type in Elm. It does this also by preseving the type safety. You can define actions and input/output types through the port and Elm will try its best to adapt the data.
+
+
