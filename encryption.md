@@ -45,6 +45,8 @@ Enter user id, password, generate keys, publish public key and use it to send me
 There is *still* no excuse not to use SSL. This will prevent MITM kind of attacks. 
 Signed browser extension is one way of dealing with this. Adding all of this information to a browser extension, you can assure that someone hasn't tampered with it. 
 
+Might not want to encrypt everything though since this operation isn't without a price. 
+
 ## In the future
 
 There will be a Web Cryptography API at some point but it is still a very fluid product.
