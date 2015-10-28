@@ -66,3 +66,9 @@ Web cryptography methods
 
 There is an info box that tells you more about the algorithm being used. 
 
+## Questions
+
+People don't userstand how encryption works. Can you encrypt the ciphertext to make it more secure? #Encryptception
+
+Yay for public key parties! I should plan one. You can share public keys using web-based tools. 
+
